@@ -5,28 +5,28 @@
 /************ Custom Font ************/
 @font-face {
   font-family: Clash Display;
-  src: url('./assets/font/ClashDisplayBold.otf');
+  src: url("./assets/font/ClashDisplayBold.otf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Clash Display Regular;
-  src: url('./assets/font/ClashDisplayRegular.otf');
+  src: url("./assets/font/ClashDisplayRegular.otf");
 }
 
 @font-face {
   font-family: Clash Display Med;
-  src: url('./assets/font/ClashDisplayMedium.otf');
+  src: url("./assets/font/ClashDisplayMedium.otf");
 }
 
 @font-face {
   font-family: Clash Display Lig;
-  src: url('./assets/font/ClashDisplayLight.otf');
+  src: url("./assets/font/ClashDisplayLight.otf");
 }
 
 @font-face {
   font-family: Clash Display semi;
-  src: url('./assets/font/ClashDisplaySemibold.otf');
+  src: url("./assets/font/ClashDisplaySemibold.otf");
 }
 
 html {
@@ -73,7 +73,7 @@ select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -107,12 +107,16 @@ nav.navbar {
 .navigation-link span.home {
   font-family: "Clash Display";
   font-weight: 700;
-  color: #FF5555
+  color: #ff5555;
 }
 
 .navigation-link span {
   margin-right: 20px;
   font-family: "Clash Display Med";
+}
+
+.navigation-link span:hover {
+  color: #ff5555;
 }
 
 .btn-submit {
@@ -135,11 +139,6 @@ nav.navbar {
   top: 30%;
   position: absolute;
 }
-
-.banner {
-  /* background: url('assets/img/banner/background_top_right.webp') 85% 50% no-repeat; */
-}
-
 
 .banner h1 {
   color: black;
@@ -164,20 +163,19 @@ nav.navbar {
   border-radius: 4px;
 }
 
+.banner button:hover {
+  background: #363636;
+}
+
 .banner-btn-grp {
   display: flex;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s ease;
-}
-
-.btn:hover span {
-  margin-left: 30px;
 }
 
 .header-info img {
@@ -226,7 +224,7 @@ nav.navbar {
 }
 
 .feature-tagline {
-  color: #FF5555;
+  color: #ff5555;
   font-family: "Clash Display Med";
   font-size: 18px;
   letter-spacing: 2px;
@@ -315,7 +313,6 @@ nav.navbar {
   font-family: "Clash Display Med";
   font-size: 18px;
   font-weight: 600;
-
 }
 
 .testimonial-star {
@@ -323,11 +320,10 @@ nav.navbar {
   bottom: 0;
 }
 
-
 /* ------------- FAQ SECTION   ---------- */
 
 .tagline-heading-bx h4 {
-  color: #FF5555;
+  color: #ff5555;
   font-size: 18px;
   font-family: "Clash Display Med";
   letter-spacing: 3px;
@@ -347,7 +343,6 @@ nav.navbar {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
-
 }
 
 .faq {
@@ -379,7 +374,7 @@ nav.navbar {
 }
 
 .faq.color-set {
-  background: #FF5555;
+  background: #ff5555;
 }
 
 .faq.color-set h1,
@@ -435,7 +430,6 @@ p {
   font-family: "Clash Display Med";
   border-radius: 4px;
   margin-bottom: 12%;
-
 }
 
 .card-img .ellipse {
@@ -449,12 +443,7 @@ p {
   bottom: 0;
 }
 
-
-
-
-
 /* footer */
-
 
 .footer {
   margin-top: 155px;
@@ -479,7 +468,6 @@ p {
   color: #000;
 }
 
-
 .subscribe {
   display: flex;
   background: #ffffff;
@@ -489,7 +477,6 @@ p {
   padding: 10px;
 }
 
-
 .subscribe button {
   margin-left: 10px;
   background: black;
@@ -497,7 +484,6 @@ p {
   border-radius: 4px;
   color: #fff;
 }
-
 
 /* Media */
 

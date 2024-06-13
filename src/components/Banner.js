@@ -6,7 +6,7 @@ import { Data } from "./Data";
 
 export const Banner = () => {
     return (
-        <section className="banner h-screen max-sm:h-auto" id="banner">
+        <section className="banner max-sm:h-auto" id="banner">
             <div className="page">
                 <div className="flex flex-row max-sm:flex-col-reverse">
                     <div className="heading w-3/5 pt-32 max-sm:w-full max-sm:pt-0">

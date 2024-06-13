@@ -31,7 +31,7 @@ export const NavBar = () => {
 
             </Nav>
             <div className="button ms-auto">
-              <button className={"btn-submit"}>Download</button>
+              <button className="btn-submit">Download</button>
             </div>
           </Container>
         </Navbar>
