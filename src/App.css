@@ -1,0 +1,542 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/************ Custom Font ************/
+@font-face {
+  font-family: Clash Display;
+  src: url('./assets/font/ClashDisplayBold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Clash Display Regular;
+  src: url('./assets/font/ClashDisplayRegular.otf');
+}
+
+@font-face {
+  font-family: Clash Display Med;
+  src: url('./assets/font/ClashDisplayMedium.otf');
+}
+
+@font-face {
+  font-family: Clash Display Lig;
+  src: url('./assets/font/ClashDisplayLight.otf');
+}
+
+@font-face {
+  font-family: Clash Display semi;
+  src: url('./assets/font/ClashDisplaySemibold.otf');
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  color: #fff !important;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+.page {
+  margin: 0 auto;
+  width: 1091px;
+}
+
+/************ Navbar Css ************/
+
+nav.navbar {
+  margin-top: 10px;
+  padding: 0px 0;
+  /* width: 1091px; */
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-link {
+  font-family: "Clash Display";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+.navigation-link span.home {
+  font-family: "Clash Display";
+  font-weight: 700;
+  color: #FF5555
+}
+
+.navigation-link span {
+  margin-right: 20px;
+  font-family: "Clash Display Med";
+}
+
+.btn-submit {
+  font-size: 17px;
+  background: black;
+  border-radius: 4px;
+  color: white;
+  font-weight: 800;
+  font-family: "Clash Display Regular";
+  padding: 13px 30px;
+}
+
+.btn-submit:hover {
+  background: #363636;
+  font-weight: 800;
+}
+
+.star-icon {
+  right: -8%;
+  top: 30%;
+  position: absolute;
+}
+
+.banner {
+  /* background: url('assets/img/banner/background_top_right.webp') 85% 50% no-repeat; */
+}
+
+
+.banner h1 {
+  color: black;
+  font-family: "Clash Display";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.banner p {
+  font-family: "Clash Display Lig";
+  font-size: 18px;
+  color: black;
+}
+
+.banner button {
+  background: black;
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+  display: flex;
+  border-radius: 4px;
+}
+
+.banner-btn-grp {
+  display: flex;
+  transition: all .5s ease;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.btn:hover span {
+  margin-left: 30px;
+}
+
+.header-info img {
+  position: absolute;
+  top: 8%;
+  z-index: -1;
+  width: 30%;
+  left: 16%;
+}
+
+.watch-video {
+  margin-left: 5%;
+  display: flex;
+  padding-top: 10px;
+}
+
+.watch-video .text {
+  color: black;
+  font-family: "Clash Display Med";
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.banner_right {
+  position: relative;
+}
+.banner_right .img {
+  position: absolute;
+  height: 414px;
+  width: 712px;
+  top: -18px;
+}
+
+/* -------------------- FEATURES ------------------ */
+
+.back-glow {
+  position: absolute;
+  z-index: -1;
+  margin-top: 5%;
+}
+
+.img-flow .star-svg {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+.feature-tagline {
+  color: #FF5555;
+  font-family: "Clash Display Med";
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.feature-content h1 {
+  color: black;
+  font-family: "Clash Display";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.feature-content h2 {
+  color: black;
+  font-family: "Clash Display Med";
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.feature-content p {
+  font-family: "Clash Display Med";
+  font-size: 18px;
+  color: grey;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.feature-subheading {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.credit-card {
+  position: absolute;
+}
+
+.testominal-heading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-family: "Clash Display Regular";
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.testimonial-subheading {
+  text-align: center;
+  font-family: "Clash Display";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.testimonal-bx {
+  display: flex;
+  margin-top: 60px;
+}
+
+.head-bx {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  font-size: 28px;
+  font-family: "Clash Display Med";
+  font-weight: 600;
+}
+
+.testimonial-content p {
+  font-family: "Clash Display Med";
+  font-size: 18px;
+  color: grey;
+  font-weight: 500;
+}
+
+.user-icon {
+  display: flex;
+  margin-top: 5%;
+}
+
+.user-name {
+  font-family: "Clash Display Med";
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.testimonial-star {
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* ------------- FAQ SECTION   ---------- */
+
+.tagline-heading-bx h4 {
+  color: #FF5555;
+  font-size: 18px;
+  font-family: "Clash Display Med";
+  letter-spacing: 3px;
+}
+
+.tagline-heading-bx h1 {
+  font-size: 48px;
+  font-family: "Clash Display";
+  font-weight: 700;
+  width: 50%;
+  line-height: 48px;
+}
+
+.faq-cards {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.faq p {
+  margin-top: 15px;
+  font-family: "Clash Display Med";
+  line-height: 24px;
+}
+
+.faq.transparent-set {
+  background: "transparent";
+  color: "black";
+}
+
+.faq.transparent-set h1 {
+  color: black;
+}
+
+.faq.transparent-set p {
+  color: grey;
+}
+
+.faq.color-set {
+  background: #FF5555;
+}
+
+.faq.color-set h1,
+p {
+  color: #fff;
+}
+
+.heading-card h1 {
+  font-size: 28px;
+  font-family: "Clash Display Med";
+  font-weight: 600;
+  width: 90%;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.card-img {
+  margin-top: 120px;
+  background: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img h1 {
+  font-size: 48px;
+  font-family: "Clash Display";
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1px;
+  margin-top: 12%;
+  margin-left: 10%;
+}
+
+.card-img p {
+  margin-left: 10%;
+  font-size: 18px;
+  font-family: "Clash Display Lig";
+  width: 50%;
+  margin-top: 10px;
+}
+
+.btn-apple {
+  background: white;
+  color: black;
+  margin-left: 10%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Clash Display Med";
+  border-radius: 4px;
+  margin-bottom: 12%;
+
+}
+
+.card-img .ellipse {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-stack {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+
+/* footer */
+
+
+.footer {
+  margin-top: 155px;
+}
+
+.link-wrap {
+  margin-top: 10px;
+}
+
+.link-row h1 {
+  font-size: 32px;
+  font-family: "Clash Display Med";
+  font-weight: 500;
+  color: #000;
+}
+
+.link-wrap span {
+  font-family: "Clash Display Regular";
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 0px;
+  color: #000;
+}
+
+
+.subscribe {
+  display: flex;
+  background: #ffffff;
+  color: grey;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+}
+
+
+.subscribe button {
+  margin-left: 10px;
+  background: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+
+/* Media */
+
+@media (max-width: 640px) {
+  .page {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .banner_right .img {
+    position: initial;
+    width: 100%;
+    height: auto;
+  }
+
+  .faq-section {
+    margin-top: 30px;
+  }
+  .faq-cards {
+    gap: 0;
+  }
+
+  .faq {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .heading-card h1 {
+    font-size: 20px;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  .img-stack {
+    img {
+      width: 160px !important;
+    }
+  }
+  .footer {
+    margin-top: 30px;
+  }
+}
